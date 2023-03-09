@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Title>WPF ChainConverter</Title>
+    <Copyright>MIT</Copyright>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <IncludeSymbols>True</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+    <Description>IValueConverter implementation that uses a sequential chain of other IValueConverters to convert values.
+Intended to be used via XAML.</Description>
+    <PackageProjectUrl>https://github.com/radj307/ChainConverter</PackageProjectUrl>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/radj307/ChainConverter</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>WPF;XAML;IValueConverter</PackageTags>
+    <PackageReleaseNotes>https://github.com/radj307/ChainConverter/commits/main</PackageReleaseNotes>
+    <NeutralLanguage>en-CA</NeutralLanguage>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Update="README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>
