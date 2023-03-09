@@ -35,9 +35,9 @@ jobs:
       - name: Build
         run:  |
               dotnet build -c ${{ env.BUILD_CONFIGURATION }}
-      - name: Pack
-        run:  |
-              dotnet pack -c ${{ env.BUILD_CONFIGURATION }} --include-symbols ${{ env.PROJECT_NAME }}
+      #- name: Pack
+      #  run:  |
+      #        dotnet pack -c ${{ env.BUILD_CONFIGURATION }} --include-symbols ${{ env.PROJECT_NAME }}
               
       - name: Push to nuget.org
         run:  |
