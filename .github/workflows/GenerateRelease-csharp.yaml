@@ -35,14 +35,11 @@ jobs:
       - name: Build
         run:  |
               dotnet build -c ${{ env.BUILD_CONFIGURATION }}
-      #- name: Pack
-      #  run:  |
-      #        dotnet pack -c ${{ env.BUILD_CONFIGURATION }} --include-symbols ${{ env.PROJECT_NAME }}
               
       - name: Push to nuget.org
         run:  |
               Write-Output "","# Pushing to (nuget.org) ..."
-              dotnet nuget push */bin/${{env.BUILD_CONFIGURATION}}/*.nupkg -k ${{ secrets.NUGET_API_KEY }} -s https://api.nuget.org/v3/index.json --skip-duplicate
+              dotnet nuget push */bin/${{env.BUILD_CONFIGURATION}}/*/*.nupkg -k ${{ secrets.NUGET_API_KEY }} -s https://api.nuget.org/v3/index.json --skip-duplicate
 
       - name: Push to Github Package Registry
         run:  |
