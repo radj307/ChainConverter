@@ -1,5 +1,4 @@
 <Project Sdk="Microsoft.NET.Sdk">
-
   <PropertyGroup>
     <TargetFramework>net6.0-windows</TargetFramework>
     <Nullable>enable</Nullable>
@@ -11,8 +10,7 @@
     <IncludeSymbols>True</IncludeSymbols>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
     <GenerateDocumentationFile>True</GenerateDocumentationFile>
-    <Description>IValueConverter implementation that uses a sequential chain of other IValueConverters to convert values.
-Intended to be used via XAML.</Description>
+    <Description>IValueConverter implementation that uses a sequential chain of other IValueConverters to convert values. Intended to be used via XAML.</Description>
     <PackageProjectUrl>https://github.com/radj307/ChainConverter</PackageProjectUrl>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <RepositoryUrl>https://github.com/radj307/ChainConverter</RepositoryUrl>
@@ -20,13 +18,12 @@ Intended to be used via XAML.</Description>
     <PackageTags>WPF;XAML;IValueConverter</PackageTags>
     <PackageReleaseNotes>https://github.com/radj307/ChainConverter/commits/main</PackageReleaseNotes>
     <NeutralLanguage>en-CA</NeutralLanguage>
+    <Version>0.0.0</Version>
   </PropertyGroup>
-
   <ItemGroup>
     <None Update="README.md">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
     </None>
   </ItemGroup>
-
 </Project>
